@@ -38,6 +38,7 @@ namespace MSSAJobBoardLoginCapable.Controllers
         }
 
         // GET: Jobs/Create
+        [Authorize]
         public ActionResult Create()
         {
             ViewBag.CompanyId = new SelectList(db.Companies, "id", "CompanyName");
@@ -48,6 +49,7 @@ namespace MSSAJobBoardLoginCapable.Controllers
         // POST: Jobs/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "id,JobTitle,CompanyName,JobLink,JobDescription,RecruiterId,CompanyId")] Job job)
@@ -63,8 +65,9 @@ namespace MSSAJobBoardLoginCapable.Controllers
             ViewBag.RecruiterId = new SelectList(db.Recruiters, "id", "FName", job.RecruiterId);
             return View(job);
         }
-
+        
         // GET: Jobs/Edit/5
+        [Authorize]
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
@@ -84,6 +87,7 @@ namespace MSSAJobBoardLoginCapable.Controllers
         // POST: Jobs/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit([Bind(Include = "id,JobTitle,CompanyName,JobLink,JobDescription,RecruiterId,CompanyId")] Job job)
@@ -100,6 +104,7 @@ namespace MSSAJobBoardLoginCapable.Controllers
         }
 
         // GET: Jobs/Delete/5
+        [Authorize]
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
@@ -115,6 +120,7 @@ namespace MSSAJobBoardLoginCapable.Controllers
         }
 
         // POST: Jobs/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
