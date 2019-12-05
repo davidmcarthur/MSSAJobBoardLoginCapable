@@ -4,10 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Job Details</h2>
 
 <div>
-    <h4>Job</h4>
+    
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -51,16 +51,20 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Recruiter.FName)
+            Recruiter Name
+            
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Recruiter.FName)
+            @Html.DisplayFor(model => model.Recruiter.LName)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id })
 </p>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+    </p>

@@ -58,17 +58,12 @@
             @Html.DisplayFor(model => model.Country)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.RecruiterId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.RecruiterId)
-        </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id })
+</p>
+<p>
     @Html.ActionLink("Back to List", "Index")
 </p>

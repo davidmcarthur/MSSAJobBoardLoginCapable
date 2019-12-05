@@ -11,18 +11,32 @@ namespace MSSAJobBoardLoginCapable
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Job
     {
         public int id { get; set; }
+        [Display(Name = "Job Title")]
         public string JobTitle { get; set; }
+        [Display(Name = "Company Name")]
         public string CompanyName { get; set; }
+        [Display(Name = "Job Link (URL)")]
         public string JobLink { get; set; }
+        [Display(Name = "Job Description")]
         public string JobDescription { get; set; }
-        public Nullable<int> RecruiterId { get; set; }
+        
+        public Nullable<int> RecruiterId 
+        { 
+            get; 
+            set; 
+        }
+
+        
         public Nullable<int> CompanyId { get; set; }
-    
+
+        
         public virtual Company Company { get; set; }
+        
         public virtual Recruiter Recruiter { get; set; }
     }
 }

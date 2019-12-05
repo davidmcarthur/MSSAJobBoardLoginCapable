@@ -11,7 +11,8 @@ namespace MSSAJobBoardLoginCapable
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Company
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,13 +20,21 @@ namespace MSSAJobBoardLoginCapable
         {
             this.Jobs = new HashSet<Job>();
         }
-    
+
+        [Display(Name = "Company")]
         public int id { get; set; }
+        [Display (Name = "Company Name" )]
         public string CompanyName { get; set; }
+
+        [Display(Name = "Address Line 1")]
         public string AddressLine1 { get; set; }
+        [Display(Name = "Address Line 2")]
         public string AddressLine2 { get; set; }
+        [Display(Name = "City")]
         public string City { get; set; }
+        [Display(Name = "State")]
         public string C_State { get; set; }
+        [Display(Name = "Country")]
         public string Country { get; set; }
         public Nullable<int> RecruiterId { get; set; }
     
