@@ -23,16 +23,25 @@ namespace MSSAJobBoardLoginCapable
 
         [Display(Name = "Recruiter")]
         public int id { get; set; }
+        
         [Display(Name = "Full Name")]
         public string FName { get; set; }
+        
         [Display(Name = "Last Name")]
         public string LName { get; set; }
+        
         [Display(Name = "eMail Address")]
+        [EmailAddress]
         public string eMailAddress { get; set; }
+        
         [Display(Name = "Phone Number")]
+        [PhoneAttribute]
         public string PhoneNumber { get; set; }
+
         [Display(Name = "LinkedIn")]
+        [Url]
         public string LinkedIn { get; set; }
+        
         [Display(Name = "Recruiting Agency/Company")]
         public string CompanyName { get; set; }
     

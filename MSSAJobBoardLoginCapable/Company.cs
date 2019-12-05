@@ -25,7 +25,6 @@ namespace MSSAJobBoardLoginCapable
         public int id { get; set; }
         [Display (Name = "Company Name" )]
         public string CompanyName { get; set; }
-
         [Display(Name = "Address Line 1")]
         public string AddressLine1 { get; set; }
         [Display(Name = "Address Line 2")]

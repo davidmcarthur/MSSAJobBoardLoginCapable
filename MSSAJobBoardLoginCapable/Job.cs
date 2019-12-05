@@ -20,16 +20,12 @@ namespace MSSAJobBoardLoginCapable
         public string JobTitle { get; set; }
         [Display(Name = "Company Name")]
         public string CompanyName { get; set; }
+        [Url]
         [Display(Name = "Job Link (URL)")]
         public string JobLink { get; set; }
         [Display(Name = "Job Description")]
         public string JobDescription { get; set; }
-        
-        public Nullable<int> RecruiterId 
-        { 
-            get; 
-            set; 
-        }
+        public Nullable<int> RecruiterId { get; set; }
 
         
         public Nullable<int> CompanyId { get; set; }
