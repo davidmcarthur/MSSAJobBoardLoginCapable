@@ -269,6 +269,7 @@
     <Content Include="JobDbModel.edmx.diagram">
       <DependentUpon>JobDbModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\MSSAJobBoardLoginCapable20191205031836 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
