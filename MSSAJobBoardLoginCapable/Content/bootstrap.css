@@ -153,9 +153,9 @@ sup {
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
+    color: #bb86fc;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 a:hover {
@@ -4294,7 +4294,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: #bb86fc;
 }
 
 .nav-fill .nav-item {

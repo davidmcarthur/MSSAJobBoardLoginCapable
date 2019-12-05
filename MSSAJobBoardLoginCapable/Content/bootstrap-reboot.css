@@ -123,7 +123,7 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #bb86fc;
   text-decoration: none;
   background-color: transparent;
 }
@@ -172,7 +172,8 @@ svg {
 }
 
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
+    color: #1e1e1e
 }
 
 caption {
