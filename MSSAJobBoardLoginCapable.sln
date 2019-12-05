@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSAJobBoardLoginCapable", "MSSAJobBoardLoginCapable\MSSAJobBoardLoginCapable.csproj", "{91E4C67D-4159-4897-BCF3-BF8D99016AD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSSAJobBoardLoginCapable.Tests", "MSSAJobBoardLoginCapable.Tests\MSSAJobBoardLoginCapable.Tests.csproj", "{A0AB7E42-4865-4EA1-B412-7ACA3A985171}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91E4C67D-4159-4897-BCF3-BF8D99016AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E4C67D-4159-4897-BCF3-BF8D99016AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E4C67D-4159-4897-BCF3-BF8D99016AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E4C67D-4159-4897-BCF3-BF8D99016AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0AB7E42-4865-4EA1-B412-7ACA3A985171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0AB7E42-4865-4EA1-B412-7ACA3A985171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0AB7E42-4865-4EA1-B412-7ACA3A985171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0AB7E42-4865-4EA1-B412-7ACA3A985171}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B99A502D-902A-4CB8-8918-143A50E8A01E}
+	EndGlobalSection
+EndGlobal
